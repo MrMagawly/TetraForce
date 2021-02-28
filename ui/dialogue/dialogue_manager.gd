@@ -35,7 +35,7 @@ func _input(event):
 		tween.set_speed_scale(1.0)
 	if Input.is_action_just_pressed("UP"):
 		dialogueButtons[0].grab_focus()
-	if Input.is_action_just_pressed("DOWN"):
+	if Input.is_action_just_pressed("DOWN") and curent_node_choices:
 		dialogueButtons[1].grab_focus()
 	
 #-----Load JSON File-----#
